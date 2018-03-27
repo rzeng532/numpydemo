@@ -11,5 +11,12 @@ cols = ['population', 'population_growth', 'birth_rate', 'death_rate']
 #result.plot(result, columns=cols, kind='hist', layout=(2,2))
 
 #result.plot(result['population'], kind='hist')
-result.hist()
+result['birth_rate'].hist()
+print(result)
+#
+#result.hist()
+
+result.hist(color='k', bins=50, alpha=0.5)
+
 plt.show()
+
